@@ -1,0 +1,279 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>首页</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .oo{
+          width:200%;
+          height:200%;
+          background-image: url('../static/07.gif');
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          background-position: center;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+  </head>
+  <body>
+<form method="post" action="/result">
+<header>
+  <div class="bg-dark collapse" id="navbarHeader" >
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg t="1640180173903" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11976" width="25" height="25"><path d="M970.432 224.848c-95.344-130.512-249.104-207.68-412.896-207.68-280.64 0-508.224 222.928-508.224 497.76 0 274.976 227.584 498.048 508.224 498.048 158.56 0 308.4-72.656 404.48-196.336l-404.48-301.712 412.896-290.08z m-328.592-55.52c36.624 0 66.112 29.072 66.112 64.816 0 35.76-29.648 64.816-66.112 64.816-36.64 0-66.128-29.056-66.128-64.8-0.16-35.76 29.504-64.832 66.128-64.832z" p-id="11977" fill="#ffffff"></path></svg>
+        <strong>食趣</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main >
+
+  <section class="py-5 text-center container oo">
+
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+
+          <h1 class="fw-light"><strong>亲爱的用户{{ username }}</strong></h1>
+          <p class="lead text-muted"><font color="#191970" size="5px">欢迎来到食趣，这里甜蜜爆表~ 亲想要的这里都有哦！<br>快来把你心爱滴美食加入购物车吧~</font></p>
+
+        <button type="submit" class="btn btn-primary my-2">购物车清单</button>
+          <p>
+            <a href="/" class="btn btn-secondary my-2">退出</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/3.jpg"  width="100%"  height="225">
+            <div class="card-body">
+              <p class="card-text">披萨上铺了4种肉：培根、火腿、BBQ肠和鸡腿肉。肉多多非常实在。再搭配上松软有嚼劲的手拍饼底，让人停不住嘴.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="硬核肉多多pizza------￥65">硬核肉多多pizza —— 65元
+                  </div>
+                <small class="text-muted">500+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/4.jpg"  width="100%"  height="225">
+
+            <div class="card-body">
+              <p class="card-text">超迷你版的小汉堡，浓缩即精华内里是由牛肉和鲜虾混合而成的肉饼，加上烤的恰到好处的松软面包，绝对让你赞不绝口.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="小汉堡------￥30">小汉堡 —— 30元
+                  </div>
+                <small class="text-muted">800+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/5.jpeg"  width="100%"  height="225">
+
+            <div class="card-body">
+              <p class="card-text">曲奇的上面涂有是绵而不腻的奶油，饼干整个酥香不软，有海盐芝士、原味奶香、黑糖等各种口味的曲奇任君挑选，总有你pick的那款.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="多味曲奇------￥50">多味曲奇 —— 50元
+                  </div>
+                <small class="text-muted">1000+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/6.jpg"  width="100%"  height="225">
+
+            <div class="card-body">
+              <p class="card-text">浓郁巧克力与清甜树莓完美组合，甜而不腻的清香扑鼻而来，紧而不实又发酵得恰到好处的巧克力蛋糕，没了外表的奶油帮你实现低卡行动.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="巧克力树莓蛋糕------￥80">巧克力树莓蛋糕 —— 80元
+                  </div>
+                <small class="text-muted">700+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/7.jpeg"  width="100%"  height="225">
+
+            <div class="card-body">
+              <p class="card-text">葡式特有的酥脆饼皮，二十几层的皮层层分明，甜得恰到好处，香浓的蛋奶味，表层的焦香适度再搭配上小葡萄干，那真是叫一个绝！！</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+
+                  <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="葡式蛋挞------￥65">葡式蛋挞 —— 65元
+                  </div>
+                <small class="text-muted">1200+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/8.jpg"  width="100%"  height="225">
+
+            <div class="card-body">
+              <p class="card-text">饼皮酥脆且有浓浓的奶香味，饼层之间夹着的是海盐芝士，外表再包裹着满满的椰蓉，一大口下去就是满满的满足感.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="千层脆华饼------￥65">千层脆华饼 —— 65元
+                  </div>
+                <small class="text-muted">680+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/12.jpg"  width="100%"  height="225">
+
+            <div class="card-body">
+              <p class="card-text">草莓果酱制作而成的蛋糕夹层，上层和最底层是松软的戚风蛋糕，奶油味浓郁又醇厚再搭配上酸甜可口的草莓，一切都是刚刚好.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="草莓蛋糕------￥70">草莓蛋糕 —— 70元
+                  </div>
+                <small class="text-muted">900+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/10.jpg"  width="100%"  height="225">
+
+            <div class="card-body">
+              <p class="card-text">QQ弹弹的水晶牛奶冻绝对会是饭后的最佳甜品之一，由新鲜纯牛奶制作，奶味醇厚，整体不会很甜，吃多也不腻非常适合不爱甜口的人.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="水晶牛奶冻------￥85">水晶牛奶冻 —— 85元
+                  </div>
+                <small class="text-muted">1000+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/11.jpg"  width="100%"  height="225">
+
+            <div class="card-body">
+              <p class="card-text">各式各样的甜甜圈，多种不同口味有黑巧奥利奥、牛乳草莓、肉桂苹果、杏仁柠檬等，每一款颜值和味道都非常在线，看着就很有食欲.</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="checkbox">
+                  <input type="checkbox" name="dagou"  value="魔力甜甜圈------￥35">魔力甜甜圈 —— 35元
+                  </div>
+                <small class="text-muted">1200+人付款</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">© 2021 LZ flask Website.</p>
+      <p class="mb-0">广州南方学院 <a >网络与新媒体</a> Python语言课程由<a href="https://gitee.com/xzhichao">许智超 </a> 指导.</p>
+  </div>
+</footer>
+</form>
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
